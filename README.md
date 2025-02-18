@@ -18,8 +18,9 @@ DuckDuckGo AI to OpenAI API
 Model mapping, unsupported models default to `gpt-4o-mini`
 
 - gpt-4o-mini -> `gpt-4o-mini`
+- llama-3.3-70b -> `meta-llama/Meta-Llama-3.3-70B-Instruct-Turbo`
 - claude-3-haiku -> `claude-3-haiku-20240307`
-- llama-3.1-70b -> `meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo`
+- o3-mini -> `o3-mini`
 - mixtral-8x7b -> `mistralai/Mixtral-8x7B-Instruct-v0.1`
 
 ## Chat
@@ -88,7 +89,7 @@ Options:
 cargo install duckai
 ```
 
-- Dokcer
+- Docker
 
 ```bash
 docker run --rm -it -p 8080:8080 ghcr.io/penumbra-x/duckai:latest run
