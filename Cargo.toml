@@ -1,8 +1,8 @@
 [package]
-name = "duckai"
+name = "duck-ai"
 description = "DuckDuckGo AI to OpenAI API"
 version = "0.3.1"
-repository = "https://github.com/penumbra-x/duckai"
+repository = "https://github.com/penumbra-x/duck-ai"
 license = "MIT"
 authors = ["0x676e67 <gngppz@gmail.com>"]
 edition = "2021"

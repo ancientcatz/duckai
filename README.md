@@ -1,8 +1,8 @@
-# duckai
+# duck-ai
 
-![Crates.io License](https://img.shields.io/crates/l/duckai)
-![crates.io](https://img.shields.io/crates/v/duckai.svg)
-![Crates.io Total Downloads](https://img.shields.io/crates/d/duckai)
+![Crates.io License](https://img.shields.io/crates/l/duck-ai)
+![crates.io](https://img.shields.io/crates/v/duck-ai.svg)
+![Crates.io Total Downloads](https://img.shields.io/crates/d/duck-ai)
 
 > 🚀 Support my journey to full-time open-source development by [sponsoring me on GitHub](https://github.com/penumbra-x/.github/blob/main/profile/SPONSOR.md)
 
@@ -43,11 +43,11 @@ curl --request POST 'http://127.0.0.1:8080/v1/chat/completions' \
 ## Command
 
 ```bash
-$ duckai -h
+$ duck-ai -h
 DuckDuckGo AI to OpenAI
 
-Usage: duckai
-       duckai <COMMAND>
+Usage: duck-ai
+       duck-ai <COMMAND>
 
 Commands:
   run      Run server
@@ -63,13 +63,13 @@ Options:
   -h, --help     Print help
   -V, --version  Print version
 
-$ duckai run -h
+$ duck-ai run -h
 Run server
 
-Usage: duckai run [CONFIG_PATH]
+Usage: duck-ai run [CONFIG_PATH]
 
 Arguments:
-  [CONFIG_PATH]  Configuration filepath [default: duckai.yaml]
+  [CONFIG_PATH]  Configuration filepath [default: duck-ai.yaml]
 
 Options:
   -h, --help  Print help
@@ -86,13 +86,13 @@ Options:
 - cargo
 
 ```bash
-cargo install duckai
+cargo install duck-ai
 ```
 
 - Docker
 
 ```bash
-docker run --rm -it -p 8080:8080 ghcr.io/penumbra-x/duckai:latest run
+docker run --rm -it -p 8080:8080 ghcr.io/penumbra-x/duck-ai:latest run
 ```
 
 - Compile
@@ -107,7 +107,7 @@ cross build --target aarch64-unknown-linux-musl --release
 2. Generate config template file
 
 ```bash
-duckai gt # Generate duckai.yaml file (current directory)
+duck-ai gt # Generate duck-ai.yaml file (current directory)
 ```
 
 ```yaml
@@ -156,8 +156,8 @@ api_key: null
 
 ## Contribution
 
-If you want to submit contributions, please open [Pull Request](https://github.com/penumbra-x/duckai/pulls)
+If you want to submit contributions, please open [Pull Request](https://github.com/penumbra-x/duck-ai/pulls)
 
 ## Get help
 
-Your questions may have been answered in [issues](https://github.com/penumbra-x/duckai/issues)
+Your questions may have been answered in [issues](https://github.com/penumbra-x/duck-ai/issues)

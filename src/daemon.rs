@@ -6,9 +6,9 @@ use std::{
     path::{Path, PathBuf},
 };
 
-const PID_PATH: &str = "/var/run/duckai.pid";
-const DEFAULT_STDOUT_PATH: &str = "/var/run/duckai.out";
-const DEFAULT_STDERR_PATH: &str = "/var/run/duckai.err";
+const PID_PATH: &str = "/var/run/duck-ai.pid";
+const DEFAULT_STDOUT_PATH: &str = "/var/run/duck-ai.out";
+const DEFAULT_STDERR_PATH: &str = "/var/run/duck-ai.err";
 
 /// Get the pid of the daemon
 fn get_pid() -> Option<String> {
@@ -30,7 +30,7 @@ pub fn root() {
 /// Start the daemon
 pub fn start(mut config_path: PathBuf) -> crate::Result<()> {
     if let Some(pid) = get_pid() {
-        println!("duckai is already running with pid: {}", pid);
+        println!("duck-ai is already running with pid: {}", pid);
         return Ok(());
     }
 
@@ -122,7 +122,7 @@ pub fn status() -> crate::Result<()> {
                 }
             }
         }
-        None => println!("duckai is not running"),
+        None => println!("duck-ai is not running"),
     }
     Ok(())
 }

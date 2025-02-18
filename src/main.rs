@@ -49,7 +49,7 @@ pub enum Commands {
 #[derive(Args)]
 pub struct ConfigPath {
     /// Configuration filepath
-    #[clap(default_value = "duckai.yaml")]
+    #[clap(default_value = "duck-ai.yaml")]
     pub config_path: PathBuf,
 }
 
