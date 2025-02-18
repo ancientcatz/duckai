@@ -17,8 +17,8 @@ use tracing::Instrument;
 
 const ORIGIN_API: &str = "https://duckduckgo.com";
 
-pub async fn manual_hello() -> &'static str {
-    "DuckDuckGo AI to OpenAI, Developed by penumbra-x. Go to /v1/chat/completions with POST. https://github.com/penumbra-x/duckai"
+pub async fn no_match() -> &'static str {
+    "The requested endpoint does not exist. Available endpoints are: GET /ping, GET /v1/models, POST /v1/chat/completions."
 }
 
 pub async fn ping() -> Json<Pong> {

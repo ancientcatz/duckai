@@ -100,7 +100,7 @@ pub async fn run(path: PathBuf) -> Result<()> {
         .route("/ping", get(route::ping))
         .route("/v1/models", get(route::models))
         .route("/v1/chat/completions", post(route::chat_completions))
-        .fallback(route::manual_hello)
+        .fallback(route::no_match)
         .with_state(app_state)
         .layer(global_layer);
 
